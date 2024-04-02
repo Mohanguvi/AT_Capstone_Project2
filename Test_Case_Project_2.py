@@ -109,7 +109,7 @@ class Test_Case:
         finally:
             self.close()
 
-    def test_TC_PIM_03(self, username, password):
+    def TC_PIM_03(self, username, password):
         """
         Test Case ID: TC_PIM_03
         Test objective: Main Menu Validation on Admin Page
@@ -137,5 +137,5 @@ class Test_Case:
 obj = Test_Case()
 obj.TC_PIM_01()
 obj.TC_PIM_02()
-obj.close()
+obj.TC_PIM_03()
 
