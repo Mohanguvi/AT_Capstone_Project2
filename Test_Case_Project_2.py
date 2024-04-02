@@ -168,14 +168,13 @@ class Test_Case:
                 element.click()
                 print(f"Clicked on '{menu_item}'")
                 print(f"{menu_item} url:", self.driver.current_url)
-                # Check if the banner pops up and provide admin key if needed
+                # Check if the access pops up and provide admin key if needed
                 self.access()
         except Exception as e:
             print("Test failed:", e)
         finally:
             self.close()
 
-# Usage
 obj = Test_Case()
 obj.TC_PIM_01()
 obj.TC_PIM_02()
